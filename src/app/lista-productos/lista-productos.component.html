@@ -1,0 +1,8 @@
+<h1>Lista de productos</h1>
+@for (elemento of productos; track elemento.idProducto) {
+    <ul>
+        <li>- Id prodcuto: {{elemento.idProducto}}  - Nombre del producto: {{elemento.nombreProducto}} - Precio del producto: {{elemento.precioUnitario}}</li>
+    </ul>
+}@empty {
+    <p>No hay datos</p>
+}

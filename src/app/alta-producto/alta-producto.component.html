@@ -1,0 +1,44 @@
+<form (ngSubmit)="agregarProducto()">
+    <div>
+      <label>ID del Producto:</label>
+      <input type="number" [(ngModel)]="nuevoProducto.idProducto" name="idProducto" placeholder="ID del Producto" required>
+    </div>
+    <div>
+      <label>Nombre del Producto:</label>
+      <input type="text" [(ngModel)]="nuevoProducto.nombreProducto" name="nombreProducto" placeholder="Nombre del Producto" required>
+    </div>
+    <div>
+      <label>ID del Proveedor:</label>
+      <input type="number" [(ngModel)]="nuevoProducto.id_supplier" name="idSupplier" placeholder="ID del Proveedor" required>
+    </div>
+    <div>
+      <label>ID de la Categoría:</label>
+      <input type="number" [(ngModel)]="nuevoProducto.id_categoria" name="idCategoria" placeholder="ID de la Categoría" required>
+    </div>
+    <div>
+      <label>Cantidad:</label>
+      <input type="text" [(ngModel)]="nuevoProducto.cantidad" name="cantidad" placeholder="Cantidad" required>
+    </div>
+    <div>
+      <label>Precio Unitario:</label>
+      <input type="number" [(ngModel)]="nuevoProducto.precioUnitario" name="precioUnitario" placeholder="Precio Unitario" required>
+    </div>
+    <div>
+      <label>Unidades en Stock:</label>
+      <input type="number" [(ngModel)]="nuevoProducto.unidadesStock" name="unidadesStock" placeholder="Unidades en Stock" required>
+    </div>
+    <div>
+      <label>En Pedido:</label>
+      <input type="number" [(ngModel)]="nuevoProducto.enPedido" name="enPedido" placeholder="En Pedido" required>
+    </div>
+    <div>
+      <label>Volver a Pedir:</label>
+      <input type="number" [(ngModel)]="nuevoProducto.volverAPedir" name="volverAPedir" placeholder="Volver a Pedir" required>
+    </div>
+    <div>
+      <label>Discontinuado (0 no, 1 sí):</label>
+      <input type="number" [(ngModel)]="nuevoProducto.discontinua" name="discontinua" placeholder="Discontinuado" required>
+    </div>
+    <button type="submit">Agregar Producto</button>
+  </form>
+  
